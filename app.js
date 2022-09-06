@@ -88,15 +88,11 @@ const mostrarAlumno = (alumno) => {
 }        */
 
 //ej 5
-const mostrarAlumnos = () => {
-    alumnos.map((alumno) => {
-        mostrarAlumnos(alumno.nombre + alumno.apellido);
-    } )
-}
 
-mostrarAlumnos()
+alumnos.map((alumno) => {
+    mostrarAlumno(alumno)
+}) 
 
-/* 
 //ej 6 
 
 const mostrarAprobados = alumnos.filter((alumno) => alumno.nota >= 6);
@@ -116,4 +112,3 @@ const mostrarCursoB = alumnos.filter((alumno) => alumno.curso === "B");
 mostrarCursoB.map((alumno) => {
     console.log("Nombre y apellido: " + capitalizar(alumno.nombre) + " " + capitalizar(alumno.apellido) + " - DNI: " + alumno.dni + " - Curso: " + alumno.anio + "°" + alumno.curso + " - Nota: " + alumno.nota);
 } )
- */
